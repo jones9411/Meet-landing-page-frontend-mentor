@@ -1,0 +1,70 @@
+@use "variables" as *;
+
+.center-page {
+  min-width: 100%;
+  // height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .image {
+      width: max(165px, 300px);
+      height: max(156px, 300px);
+      margin: 15px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 14px;
+      }
+    }
+  }
+
+  .text-container {
+    margin-top: 1.55rem;
+    padding: 0 150px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    h2 {
+      color: $blueishGreen;
+      font-weight: $WeightsLargeBold;
+      font-size: 1.75rem;
+      line-height: 1.625rem;
+      margin-top: 1.25rem;
+    }
+
+    h3 {
+      color: $blackIsh;
+      font-weight: $WeightsLargeBold;
+      font-size: 3.25rem;
+      line-height: 3rem;
+      max-width: 50%;
+      margin-top: 1.25rem;
+    }
+
+    p {
+      color: $lightGrey;
+      font-weight: $WeightsBold;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      max-width: 65%;
+      margin-top: 1.25rem;
+    }
+  }
+
+  .num-two {
+    z-index: 10;
+  }
+}

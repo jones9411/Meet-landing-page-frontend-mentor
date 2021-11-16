@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $FamilyRedHat;
+  font-weight: $WeightsNormal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+  height: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
+  .bgt {
+    padding: 18px 30px;
+    outline: none;
+    border: none;
+    border-radius: 32px;
+    margin: 15px;
+    cursor: pointer;
+    font-weight: $WeightsLargeBold;
+    font-size: 1rem;
+  }
+}
+
+.page-number {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .line {
+    border: 1px solid lightgray;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 1px;
+    height: 75px;
+  }
+  .circle {
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
